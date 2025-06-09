@@ -1,0 +1,503 @@
+ body, html {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      font-weight: 900;
+    }
+header {
+  background: url('oceano2.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+header {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #00cfff 100%),
+              url('oceano2.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px 0 20px;
+  position: relative;
+  height: 500px;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.bubble-transition {
+  display: none;
+}
+
+header{
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+    header h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px #000000bb;
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    .vida-marinha-banner {
+      position: relative;
+      background: url('A_digital_illustration_showcases_an_underwater_mar.png') center center no-repeat;
+      background-color: #00cfff;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .conteudo-banner {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 15px;
+      animation: aparecer 1.5s ease-in-out;
+    }
+
+    .conteudo-banner h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      padding: 20px;
+      background: linear-gradient(to right, #2fcbfd, #1f206f);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      animation: flutuar 3s infinite ease-in-out;
+    }
+
+    .conteudo-banner p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .btn-descobrir {
+      background: #2fcbfc;
+      color: #f0f9ff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn-descobrir:hover {
+      background: #0077b6;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes flutuar {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .cards-section {
+      background: linear-gradient(to bottom, #f9f9f9 , #f9f9f9);
+      text-align: center;
+    }
+
+    .cards-section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      width: 280px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .content {
+      padding: 20px;
+    }
+
+    .card .hidden-content {
+      display: none;
+      background: #f9f9f9;
+      padding: 10px 20px;
+      border-top: 1px solid #f9f9f9;
+      text-align: left;
+    }
+
+    .card.open .hidden-content {
+      display: block;
+    }
+    .sessao-jornal {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+
+
+
+.sessao-jornal h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.jornal-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.noticia {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.noticia:hover {
+  transform: scale(1.02);
+}
+
+.noticia h3 {
+  font-size: 1.3em;
+  color: #222;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.noticia p {
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #444;
+}
+
+
+    .game-section {
+      background: linear-gradient(to bottom, #00cfff, #020081);
+      text-align: center;
+    }
+
+    .game-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #f9f9f9;
+    }
+
+    .game-section p {
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      color: #f9f9f9;
+    }
+
+    .game-section a {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #f9f9f9;
+      color: #000000bb;
+      text-decoration: none;
+      border-radius: 9px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: linear-gradient(to bottom, #020081, #020081);
+      color: white;
+      text-align: center;
+      padding: 60px 20px 30px;
+      position: relative;
+    }
+
+
+    @keyframes wave {
+      0% { background-position-x: 0; }
+      100% { background-position-x: 1000px; }
+    }
+
+    footer p {
+      position: relative;
+      z-index: 2;
+    }
+.vida-marinha-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.bubble-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.vida-marinha-banner img,
+.conteudo-banner {
+  position: relative;
+  z-index: 1;
+}
+.game-section {
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+.game-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.game-texto {
+  max-width: 400px;
+  text-align: left;
+}
+
+.game-video {
+  flex: 1 1 400px;
+  max-width: 560px;
+}
+style
+.curiosidades-section {
+  padding: 60px 20px;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.curiosidade-card {
+  width: 250px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.curiosidade-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-front {
+  background-color: #ffffff;
+  color: #000000bb;
+  font-weight: bold;
+}
+
+.card-back {
+  background-color: #0077b6;
+  color: white;
+  transform: rotateY(180deg);
+}
+#curiosidades h2 {
+  text-align: center;
+  font-size: 2rem; 
+  margin-bottom: 1rem;
+  color: #000000bb; 
+  font-weight: bold;
+}
+
+#curiosidades {
+   background: linear-gradient(to bottom, #f9f9f9, #e6db76bb);  
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pesquisas-e-fatos {
+   background: linear-gradient(to bottom, #e6db76bb, #f9f9f9);
+  
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+.curiosidade-card {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 300px;
+  min-width: 250px;
+  perspective: 1000px; 
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  color: #000000bb;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+
+.card-back {
+  background-color: #f9f9f9;
+  transform: rotateY(180deg);
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.curiosidade-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.curiosidade-card .card-back p,
+.jornal-container .noticia p {
+  text-align: justify;
+}
+
+#link-footer{
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .vida-marinha-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .vida-marinha-banner img {
+    display: none;
+  }
+
+  .conteudo-banner {
+    padding: 10px;
+  }
+
+  .conteudo-banner h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+
+  .conteudo-banner p {
+    font-size: 1em;
+    margin-bottom: 15px; /* Menor que antes */
+  }
+
+  .botao {
+    margin-top: 10px; /* Aproxima do texto */
+    padding: 10px 24px;
+  }
+}
+

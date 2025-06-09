@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feira de Ciências 2025 IEMA pleno newton bello - Vida Marinha</title>
+  <link rel="stylesheet" href="style.css"> 
+  
+</head>
+<style>
+  
+</style>
+<body>
+
+  <header data-rellax-speed="-3" class="rellax">
+    <h1>Projeto Ondas de Consciência - 303</h1>
+    <p>Cultura oceânica: Explorando, compreendendo e preservando</p>
+  </header>
+
+  <section class="vida-marinha-banner" data-rellax-speed="-2" class="rellax">
+   <div class="bubble-container" id="bubble-container"></div>
+
+   <style>
+     .bubble-container {
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       overflow: hidden;
+       z-index: 0;
+     }
+
+     .bubble {
+       position: absolute;
+       bottom: -50px;
+       background-color: rgba(255, 255, 255, 0.4);
+       border-radius: 50%;
+       pointer-events: none;
+       animation: rise 10s linear infinite;
+     }
+
+     @keyframes rise {
+       0% {
+         transform: translateY(0) scale(1);
+         opacity: 1;
+       }
+       100% {
+         transform: translateY(-100vh) scale(0.5);
+         opacity: 0;
+       }
+     }
+   </style>
+
+   <script>
+     const container = document.getElementById('bubble-container');
+
+     function createBubble() {
+       const bubble = document.createElement('div');
+       bubble.classList.add('bubble');
+       const size = Math.random() * 20 + 10;
+       bubble.style.width = `${size}px`;
+       bubble.style.height = `${size}px`;
+       bubble.style.left = `${Math.random() * 100}%`;
+       bubble.style.animationDuration = `${5 + Math.random() * 5}s`;
+       container.appendChild(bubble);
+
+       setTimeout(() => {
+         bubble.remove();
+       }, 10000);
+     }
+
+     setInterval(createBubble, 200);
+   </script>
+   <div class="conteudo-banner">
+      <h2>Mergulhe na Vida Marinha</h2>
+      <p>Você sabia que o mar é responsável pelo controle da temperatura e do clima local? Com isso, a poluição se torna um grande fator poluente, tendo em vista que muitos rios desaguam nos oceanos e acabam recebendo a água poluída.</p>
+      <a href="#cards-conscientizacao" class="btn-descobrir">Descubra Mais</a>
+    </div>
+    <div><img src="tartaruga-sem-fundo.png" alt=""></div>
+  </section>
+  
+<svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#00D1FF" d="M0,32L60,48C120,64,240,96,360,96C480,96,600,64,720,58.7C840,53,960,75,1080,85.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"/>
+</svg>
+
+<section id="curiosidades">
+  <section id="cards-conscientizacao"></section>
+  <h2>Curiosidades</h2>
+  <div class="container-curiosidades">
+ <div class="container-curiosidades">
+  <div class="cards-container">
+
+    <div class="curiosidade-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>Como reduzir a poluição Marinha?</h3>
+        </div>
+        <div class="card-back">
+          <p>Reduzir o uso de plásticos, promover o saneamento básico, evitar o descarte incorreto de resíduos e adotar hábitos mais sustentáveis, como a reutilização e reciclagem.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="curiosidade-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>Como preservar os Recifes?</h3>
+        </div>
+        <div class="card-back">
+          <p>Criar e fortalecer áreas marinhas protegidas ajuda a preservar os recifes e a biodiversidade marinha.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="curiosidade-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>Espécies em Extinção</h3>
+        </div>
+        <div class="card-back">
+          <p>Tartarugas, golfinhos e baleias estão entre as espécies ameaçadas pela pesca predatória e pela destruição do habitat. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="curiosidade-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>Como a poluição afeta as praias?</h3>
+        </div>
+        <div class="card-back">
+          <p>A poluição contamina as praias, tornando-as impróprias para o banho e o lazer.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="curiosidade-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>Qual é a maior fonte de poluição nos oceanos?</h3>
+        </div>
+        <div class="card-back">
+          <p>O microplástico, como o próprio nome diz, é uma pequena partícula de plástico. Esse tipo de material é um dos principais poluentes dos oceanos.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="curiosidade-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <h3>Quantos animais morrem por causa do lixo no mar?</h3>
+        </div>
+        <div class="card-back">
+          <p>Estima-se que pelo menos 100 mil animais marinhos morrem anualmente devido à poluição por plástico no oceano.</p>
+        </div>
+  </section>
+
+  <section id="pesquisas-e-fatos" class="sessao-jornal">
+    <h2>Pesquisas e Fatos</h2>
+    <div class="jornal-container">
+      <article class="noticia">
+        <h3>Morte da vida marinha</h3>
+        <p>"A poluição leva milhares de espécies marinhas à morte todos os anos. Os principais vilões incluem: Plásticos, derramamentos de petróleo, substâncias químicas."</p>
+      </article>
+      <article class="noticia">
+        <h3>Poluição oceânica</h3>
+        <p>"Toneladas de dejetos contribuem com a poluição da água que banha os continentes. Todos os anos, cerca de 13 milhões de toneladas de lixo plástico são despejadas nos oceanos Atlântico, Pacífico e Índico."</p>
+      </article>
+      <article class="noticia">
+        <h3>Ciência Marinha na Medicina</h3>
+        <p>"Pesquisas com organismos marinhos têm contribuído com descobertas na medicina, como medicamentos derivados de algas e esponjas do mar, tornando o oceano indespensável para a vida."</p>
+      </article>
+      <article class="noticia">
+        <h3>Aquecimento Global</h3>
+        <p>"Os oceanos absorvem cerca de 90% do calor gerado pelo aquecimento global, o que afeta diretamente a vida marinha e os recifes de coral."</p>
+      </article>
+      <article class="noticia">
+        <h3>Oceano e Comércio Global</h3>
+        <p>"Mais de 80% do comércio mundial depende do transporte marítimo, tornando os oceanos essenciais para a economia global."</p>
+      </article>
+    </div>
+    
+  </section>
+  <div style="margin-bottom: -1px; line-height: 0;">
+  <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#00cfff" fill-opacity="1" d="M0,0 C480,80 960,20 1440,60 L1440,100 L0,100 Z" />
+  </svg>
+</div>
+
+  <section class="game-section rellax" data-rellax-speed="2">
+  <div class="conteudo-jogo">
+    <h2>Nosso Jogo Educativo</h2>
+    <div class="game-content">
+      <div class="game-texto">
+        <p>Explore a vida marinha e aprenda sobre a preservação de forma divertida e interativa!</p>
+        <a href="https://poki.com/br/g/ocean" target="_blank">Ir para o Jogo</a>
+      </div>
+      <div class="game-video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/rHakqapDS44" title="Jogo Educativo" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer data-rellax-speed="-1" class="rellax">
+    <div id="link-footer">
+      <p>Aprenda mais sobre biodiversidade e preservação</p>
+       <a href="https://www.greenpeace.org/brasil/">Greenpeace</a>
+       <a href="https://www.wwf.org.br/">WWF</a>
+       <a href="https://www.tnc.org.br/">Tnc</a>
+    </div>
+   
+    <p>© 2025 Feira de Ciências do IEMA Pleno Newton Bello | Projeto Vida Marinha 303 </p> <br> <p>by: luis gustavo - 303</p>
+  </footer>
+
+  <script>
+    new Rellax('.rellax');
+  </script>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const isOpen = card.classList.contains('open');
+        cards.forEach(c => c.classList.remove('open'));
+        if (!isOpen) {
+          card.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
