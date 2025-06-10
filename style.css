@@ -475,14 +475,21 @@ style
     text-align: center;
     padding: 20px;
     align-items: center;
+    margin: 0px;
+    padding: 70px;
+   
   }
 
+  header{
+    margin: 0px;
+    padding: 0px;
+  }
   .vida-marinha-banner img {
     display: none;
   }
 
   .conteudo-banner {
-    padding: 10px;
+    padding: 20px;
   }
 
   .conteudo-banner h2 {
