@@ -380,8 +380,10 @@ style
 }
 #curiosidades h2 {
   text-align: center;
-  font-size: 2rem; 
-  margin-bottom: 1rem;
+  font-size: 3rem; 
+  margin-bottom: 100px;
+  margin-top: 0px;
+  padding-top: 0px;
   color: #000000bb; 
   font-weight: bold;
 }
@@ -392,7 +394,13 @@ style
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10px;
 }
+
+#cards-conscientizacao{
+    margin: 30px;
+    padding: 0px;
+  }
 
 #pesquisas-e-fatos {
    background: linear-gradient(to bottom, #e6db76bb, #f9f9f9);
@@ -473,14 +481,15 @@ style
   .vida-marinha-banner {
     flex-direction: column;
     text-align: center;
-    padding: 20px;
     align-items: center;
-    margin: 0px;
-    padding: 70px;
+    margin-top: 0px;
+    padding: 30px;
+    padding-top: 0px;
    
   }
+  
 
-  header{
+  .header{
     margin: 0px;
     padding: 0px;
   }
@@ -490,6 +499,7 @@ style
 
   .conteudo-banner {
     padding: 20px;
+    
   }
 
   .conteudo-banner h2 {
@@ -505,6 +515,20 @@ style
   .botao {
     margin-top: 10px; /* Aproxima do texto */
     padding: 10px 24px;
+  }
+
+  #curiosidades{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #cards-conscientizacao{
+    margin: 30px;
+    padding: 0px;
+  }
+
+  .cards-container{
+    margin-top: 20px;
   }
 }
 
