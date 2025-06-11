@@ -522,6 +522,9 @@ style
     padding: 0px;
   }
 
+  #curiosidades h2{
+    margin-bottom: 30px;
+  }
   #cards-conscientizacao{
     margin: 30px;
     padding: 0px;
